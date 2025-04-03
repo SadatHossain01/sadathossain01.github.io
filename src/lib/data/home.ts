@@ -3,6 +3,8 @@ import { getSkills } from './skills';
 import type { Skill } from './types';
 
 const title = 'Home';
+const description =
+	'Mohammad Sadat Hossain | CS Graduate from BUET | AI & Bioinformatics Researcher | Adjunct Lecturer at CSE, BUET | Competitive Programming | Hackathon | Deep Learning Competitions | Exploring the intersection of computational methods and scientific innovation in healthcare and genomics. Open to research opportunities and collaboration.';
 
 const hero: {
 	title: string;
@@ -11,9 +13,13 @@ const hero: {
 } = {
 	title: `${BaseData.fullName}`,
 	description:
-		'I am a passionate and curious learner. Beyond my academic pursuits, I have actively explored diverse areas of Computer Science, including competitive programming, hackathons, and deep learning competitions. I am eager to embrace opportunities that enable me to apply my problem-solving skills and curiosity to address real-world challenges while further expanding my expertise.',
+		'Hello, this is Sadat, a fresh CS graduate from Bangladesh University of Engineering and Technology (BUET). I am passionate about research in bioinformatics, artificial intelligence for scientific and medical applications, and machine learning. During my undergraduate journey, I actively engaged in competitive programming, hackathons, and deep learning competitions, which strengthened my problem-solving abilities. I am currently open to exploring research opportunities where I can apply computational methods to solve complex scientific challenges. I am excited about making impactful contributions to the scientific community while continuously expanding my knowledge in emerging technologies. With a decent foundation in algorithms and programming, I am eager to collaborate on projects that address real-world problems in healthcare, genomics, and related fields.',
 	links: [
-		{ label: 'GitHub', href: 'https://github.com/SadatHossain01', icon: 'i-carbon-logo-github' },
+		{
+			label: 'GitHub',
+			href: 'https://github.com/SadatHossain01',
+			icon: 'i-carbon-logo-github'
+		},
 		{
 			label: 'LinkedIn',
 			href: 'https://www.linkedin.com/in/SadatHossain01',
@@ -44,6 +50,7 @@ const carousel: Array<Skill> = getSkills();
 
 const HomeData = {
 	title,
+	description,
 	hero,
 	carousel
 };

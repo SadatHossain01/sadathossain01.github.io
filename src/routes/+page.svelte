@@ -9,7 +9,7 @@
 	import Icon from '$lib/components/ui/icon/icon.svelte';
 	import ResponsiveContainer from '$lib/components/ui/responsive-container/responsive-container.svelte';
 	import { Tooltip, TooltipContent, TooltipTrigger } from '$lib/components/ui/tooltip';
-	import H2 from '$lib/components/ui/typography/h2.svelte';
+	import H1 from '$lib/components/ui/typography/h1.svelte';
 	import Muted from '$lib/components/ui/typography/muted.svelte';
 	import HomeData from '$lib/data/home';
 	import { href } from '$lib/utils';
@@ -28,7 +28,7 @@
 	});
 </script>
 
-<Title title={HomeData.title} />
+<Title title={HomeData.title} description={HomeData.description} />
 <ResponsiveContainer className="flex flex-col justify-center flex-1">
 	<div
 		class="flex flex-1 flex-col items-center justify-center gap-8 px-14 md:flex-row md:justify-between"
@@ -36,7 +36,7 @@
 		<div
 			class="flex flex-col items-center justify-center gap-4 text-center md:items-start md:text-left"
 		>
-			<H2>{HomeData.hero.title}</H2>
+			<H1>{HomeData.hero.title}</H1>
 			<Muted>{HomeData.hero.description}</Muted>
 			<div class="flex flex-row gap-1">
 				{#each HomeData.hero.links as item}

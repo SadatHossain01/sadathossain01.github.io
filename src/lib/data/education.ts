@@ -11,23 +11,27 @@ const items: Array<Education> = [
 		logo: Assets.BUET,
 		name: 'BUET',
 		organization: 'Bangladesh University of Engineering and Technology',
-		period: { from: new Date(2020, 1, 22) },
+		period: {
+			from: new Date(2020, 1, 22),
+			to: new Date(2025, 2, 25)
+		},
 		shortDescription: '',
 		slug: 'buet',
 		subjects: [
-			'OOP',
-			'Discrete Mathematics',
-			'DSA',
-			'Numerical Methods',
+			'Object Oriented Programming',
 			'Database',
-			'Compiler',
+			'Statistics',
+			'Linear Algebra',
+			'Discrete Mathematics',
+			'Data Structure & Algorithm',
+			'Compiler', 'Algorithm Engineering',
 			'Computer Architecture',
 			'Microcontroller & Microprocessor',
 			'Operating System',
 			'Computer Network',
-			'AI',
+			'Artificial Intelligence',
+			'Information System Design',
 			'Bioinformatics',
-			'Advanced Graph Theory',
 			'Computer Graphics',
 			'Computer Security',
 			'Machine Learning'
@@ -55,7 +59,7 @@ const items: Array<Education> = [
 		period: { from: new Date(2010, 0, 1), to: new Date(2017, 1, 28) },
 		shortDescription: '',
 		slug: 'shksc',
-		subjects: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'English', 'Bangla', 'ICT', 'BGS']
+		subjects: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'English', 'Bangla', 'ICT', 'Bangladesh & Global Studies']
 	},
 	{
 		degree: 'Primary School',
@@ -67,7 +71,7 @@ const items: Array<Education> = [
 		period: { from: new Date(2007, 0, 1), to: new Date(2009, 11, 31) },
 		shortDescription: '',
 		slug: 'dsblsc',
-		subjects: []
+		subjects: ['Mathematics', 'English', 'Bangla', 'Science']
 	},
 	{
 		degree: 'KG',
