@@ -1,0 +1,1 @@
+import{p as e,b as i,t as m}from"./CCK8prOp.js";import"./Dz7PMXSJ.js";import{v as p}from"./aj5FnfNL.js";import{s as c}from"./BQ8oC6Y3.js";var l=m("<i></i>");function I(o,a){let s=e(a,"icon",8),r=e(a,"className",8,"");var t=l();p(()=>c(t,`flex-shrink-0 ${r()} ${s()}`)),i(o,t)}export{I};
