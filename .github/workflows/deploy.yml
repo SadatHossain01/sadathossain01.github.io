@@ -20,6 +20,7 @@ jobs:
           yarn build
           touch build/.nojekyll
           cp build/404.html build/index.html
+          echo 'sadathossain.me' > build/CNAME
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
