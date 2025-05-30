@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
-        // GitHub Pages SPA redirect solution
-        // Store the current path and redirect to root with the path as a query parameter
-        sessionStorage.redirect = location.pathname + location.search + location.hash;
+        // Store the current path in sessionStorage and redirect to home
+        // This only happens when a 404 occurs (user refreshes or direct link)
+        sessionStorage.setItem('spa_redirect', location.pathname + location.search + location.hash);
         location.replace('/');
     </script>
 </head>
 <body>
-    Redirecting...
+    <p>Redirecting...</p>
 </body>
 </html>
