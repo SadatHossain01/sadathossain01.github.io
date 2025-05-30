@@ -9,60 +9,10 @@
 		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 		
-		<script>
-			// Apply theme to loader immediately - run before body is rendered to prevent flicker
-			(function() {
-				try {
-					const theme = localStorage.getItem('mode-watcher-mode');
-					const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-					
-					// Determine if we should use dark theme
-					const shouldUseDark = theme === 'dark' || (theme !== 'light' && systemDark);
-					
-					// Set theme class on document element immediately
-					const htmlEl = document.documentElement;
-					if (shouldUseDark) {
-						htmlEl.classList.add('dark-loader', 'dark');
-						htmlEl.style.colorScheme = 'dark';
-					} else {
-						htmlEl.classList.add('light-loader');
-						htmlEl.classList.remove('dark');
-						htmlEl.style.colorScheme = 'light';
-					}
-					
-					// Store initial theme state to prevent mode-watcher conflicts
-					htmlEl.setAttribute('data-initial-theme', shouldUseDark ? 'dark' : 'light');
-				} catch (e) {
-					// Fallback: just rely on CSS media queries
-					console.warn('Theme detection failed, falling back to CSS media queries');
-				}
-			})();
-		</script>
-
-		<script>
-			// GitHub Pages SPA redirect handler
-			// Only handle redirects that came from 404.html
-			(function() {
-				var redirect = sessionStorage.getItem('spa_redirect');
-				if (redirect) {
-					sessionStorage.removeItem('spa_redirect');
-					// Only redirect if we're currently on the home page and the redirect path is different
-					if (location.pathname === '/' && redirect !== '/') {
-						history.replaceState(null, null, redirect);
-					}
-				}
-			})();
-		</script>
-
 		<style>
 			/* Prevent scrollbars during loading */
 			body {
 				overflow: hidden;
-			}
-			
-			/* Prevent any flash by setting color-scheme immediately */
-			html {
-				color-scheme: light dark;
 			}
 			
 			/* Simple HTML-only loader - Default light theme */
@@ -129,15 +79,15 @@
 			
 			/* System dark mode fallback */
 			@media (prefers-color-scheme: dark) {
-				html:not(.light-loader) #html-loader {
+				body:not(.light-loader) #html-loader {
 					background: hsl(240 10% 3.9%);
 				}
 				
-				html:not(.light-loader) .loader-text {
+				body:not(.light-loader) .loader-text {
 					color: hsl(0 0% 98%);
 				}
 				
-				html:not(.light-loader) .loading-dot {
+				body:not(.light-loader) .loading-dot {
 					background: hsl(0 0% 98%);
 				}
 			}
@@ -164,12 +114,13 @@
 		</style>
 		
 		
-		<link rel="modulepreload" href="/_app/immutable/entry/start.DTMyEOD7.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/DlY37Aht.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/BGxpidpv.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/DY0GyZQh.js">
-		<link rel="modulepreload" href="/_app/immutable/entry/app._sTkr_BK.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/DvFgILkl.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/start.CPwPd2Nb.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DCfjQ4a6.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DvUDKQcz.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DRCbrA08.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/95uLajJh.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.D1V1ucUy.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BUf2uzgo.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div id="html-loader">
@@ -185,20 +136,42 @@
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_l3hxgd = {
+					__sveltekit_1plvtg4 = {
 						base: ""
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/_app/immutable/entry/start.DTMyEOD7.js"),
-						import("/_app/immutable/entry/app._sTkr_BK.js")
+						import("/_app/immutable/entry/start.CPwPd2Nb.js"),
+						import("/_app/immutable/entry/app.D1V1ucUy.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
 				}
 			</script>
 		</div>
+		
+		<script>
+			// Apply theme to loader immediately - placed at bottom to ensure body is available
+			(function() {
+				try {
+					const theme = localStorage.getItem('mode-watcher-mode');
+					const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+					
+					// Determine if we should use dark theme
+					const shouldUseDark = theme === 'dark' || (theme !== 'light' && systemDark);
+					
+					if (shouldUseDark) {
+						document.body.classList.add('dark-loader');
+					} else {
+						document.body.classList.add('light-loader');
+					}
+				} catch (e) {
+					// Fallback: just rely on CSS media queries
+					console.warn('Theme detection failed, falling back to CSS media queries');
+				}
+			})();
+		</script>
 	</body>
 </html>
