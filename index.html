@@ -39,6 +39,17 @@
 			})();
 		</script>
 
+		<script>
+			// GitHub Pages SPA redirect handler
+			(function() {
+				var redirect = sessionStorage.redirect;
+				delete sessionStorage.redirect;
+				if (redirect && redirect !== location.pathname) {
+					history.replaceState(null, null, redirect);
+				}
+			})();
+		</script>
+
 		<style>
 			/* Prevent scrollbars during loading */
 			body {
@@ -149,12 +160,12 @@
 		</style>
 		
 		
-		<link rel="modulepreload" href="/_app/immutable/entry/start.BsZADAUb.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/Bj-LW3Im.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/start.Eef5VB4T.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/CHgEV7v9.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/DvUDKQcz.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/DRCbrA08.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/DXPsakTp.js">
-		<link rel="modulepreload" href="/_app/immutable/entry/app.BcnvhUXc.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/KwRCRFk_.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.C8OKujj1.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/BUf2uzgo.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
@@ -171,15 +182,15 @@
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_1teio4a = {
+					__sveltekit_1ehmgkf = {
 						base: ""
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/_app/immutable/entry/start.BsZADAUb.js"),
-						import("/_app/immutable/entry/app.BcnvhUXc.js")
+						import("/_app/immutable/entry/start.Eef5VB4T.js"),
+						import("/_app/immutable/entry/app.C8OKujj1.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
