@@ -1,0 +1,4 @@
+<!-- This is a placeholder file. You should replace this with an actual OG image (1200x630px) -->
+<!-- The image should showcase your portfolio branding and key information -->
+<!-- Recommended: Create an image with your name, title, and key skills/technologies -->
+<!-- Place the actual og-image.jpg file in the static folder -->
