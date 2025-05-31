@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<!-- Preload critical fonts -->
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		
+		<style>
+			/* Prevent scrollbars during loading */
+			body {
+				overflow: hidden;
+			}
+			
+			/* Simple HTML-only loader - Default light theme */
+			#html-loader {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				background: hsl(0 0% 100%);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				z-index: 10000;
+				transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+				font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+				overflow: hidden; /* Prevent scrollbar */
+			}
+			
+			.loader-container {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				animation: fadeInUp 0.8s ease-out;
+			}
+			
+			.loader-text {
+				font-size: 1.5rem;
+				font-weight: 500;
+				color: hsl(240 5.9% 10%);
+				letter-spacing: -0.02em;
+			}
+			
+			.loading-dots {
+				display: flex;
+				gap: 0.5rem;
+				align-items: center;
+			}
+			
+			.loading-dot {
+				width: 8px;
+				height: 8px;
+				background: hsl(240 5.9% 10%);
+				border-radius: 50%;
+				animation: dotBounce 1.4s infinite ease-in-out both;
+			}
+			
+			.loading-dot:nth-child(1) { animation-delay: -0.32s; }
+			.loading-dot:nth-child(2) { animation-delay: -0.16s; }
+			.loading-dot:nth-child(3) { animation-delay: 0s; }
+			
+			/* Dark theme styles - will be applied via JavaScript */
+			.dark-loader #html-loader {
+				background: hsl(240 10% 3.9%);
+			}
+			
+			.dark-loader .loader-text {
+				color: hsl(0 0% 98%);
+			}
+			
+			.dark-loader .loading-dot {
+				background: hsl(0 0% 98%);
+			}
+			
+			/* System dark mode fallback */
+			@media (prefers-color-scheme: dark) {
+				body:not(.light-loader) #html-loader {
+					background: hsl(240 10% 3.9%);
+				}
+				
+				body:not(.light-loader) .loader-text {
+					color: hsl(0 0% 98%);
+				}
+				
+				body:not(.light-loader) .loading-dot {
+					background: hsl(0 0% 98%);
+				}
+			}
+			
+			@keyframes dotBounce {
+				0%, 80%, 100% {
+					transform: scale(0);
+				}
+				40% {
+					transform: scale(1);
+				}
+			}
+			
+			@keyframes fadeInUp {
+				from {
+					opacity: 0;
+					transform: translateY(20px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		</style>
+		
+		
+		<link href="./_app/immutable/assets/0.Dx56miBI.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/fancy-card.BleGwta9.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.CFoTqnFO.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/C2uI1otG.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/C6ngwAjX.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CdOhZy29.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/jTw_ARZ3.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.DIbpfEFn.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/SLV4NgUp.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.B9Wc6Pq3.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/bEOjpF49.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CXq-mRdO.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DF4fL879.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/wZXurfXM.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BYCXwrSY.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/C66Dxnp2.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BZkOYfuH.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/V2XiDHDF.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Bl7ouKqP.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CWX8gq6P.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DZOdx7hu.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/D2Zcuewn.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/D62T783J.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/C_MAN77B.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/7.02I_eW14.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/FA1438mp.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CgG6U-yc.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/dT9wIDP6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CW9n45pn.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Dcyk4nw1.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CJFhCXb4.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DDBfyhzG.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/K2J0RDYk.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CchN9xPX.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DwrR-sRw.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DiQCLDAz.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Dc7h0N_A.js"><!--[--><!--[!--><!--]--> <!--[!--><!----><script>(function setInitialMode({ defaultMode, themeColors: themeColors2, darkClassNames: darkClassNames2 = ["dark"], lightClassNames: lightClassNames2 = [], defaultTheme = "" }) {
+  const rootEl = document.documentElement;
+  const mode = localStorage.getItem("mode-watcher-mode") || defaultMode;
+  const theme = localStorage.getItem("mode-watcher-theme") || defaultTheme;
+  const light = mode === "light" || mode === "system" && window.matchMedia("(prefers-color-scheme: light)").matches;
+  if (light) {
+    if (darkClassNames2.length)
+      rootEl.classList.remove(...darkClassNames2);
+    if (lightClassNames2.length)
+      rootEl.classList.add(...lightClassNames2);
+  } else {
+    if (lightClassNames2.length)
+      rootEl.classList.remove(...lightClassNames2);
+    if (darkClassNames2.length)
+      rootEl.classList.add(...darkClassNames2);
+  }
+  rootEl.style.colorScheme = light ? "light" : "dark";
+  if (themeColors2) {
+    const themeMetaEl = document.querySelector('meta[name="theme-color"]');
+    if (themeMetaEl) {
+      themeMetaEl.setAttribute("content", mode === "light" ? themeColors2.light : themeColors2.dark);
+    }
+  }
+  if (theme) {
+    rootEl.setAttribute("data-theme", theme);
+    localStorage.setItem("mode-watcher-theme", theme);
+  }
+  localStorage.setItem("mode-watcher-mode", mode);
+})({"defaultMode":"system","darkClassNames":["dark"],"lightClassNames":[],"defaultTheme":"","modeStorageKey":"mode-watcher-mode","themeStorageKey":"mode-watcher-theme"});</script><!----><!--]--><!--]--><!--[--><meta name="description" content="Description"><!--]--><title>Experience | Sadat Hossain</title>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div id="html-loader">
+			<div class="loader-container">
+				<span class="loader-text">Loading</span>
+				<div class="loading-dots">
+					<div class="loading-dot"></div>
+					<div class="loading-dot"></div>
+					<div class="loading-dot"></div>
+				</div>
+			</div>
+		</div>
+		<div style="display: contents"><!--[--><!--[--><!----><!----> <!--[!--><!--]--> <div class="app-container flex h-screen w-screen flex-col overflow-x-hidden svelte-zxq5ct"><div class="border-1 absolute left-0 right-0 top-0 z-10 flex h-[50px] flex-row items-center border-b bg-[--bg] px-4 backdrop-blur-xl sm:px-8" style="--bg : hsl(var(--background) / 0.5)"><div class="sm:flex-1"><a href="/" class="flex flex-row items-center justify-start gap-2 text-2xl"><!----><!--[!--><button aria-describedby="JbRLAIIJsb" id="yJ_Pt760HM" data-state="closed" data-melt-tooltip-trigger="" data-tooltip-trigger="" type="button"><!----><i class="flex-shrink-0  i-carbon-code"></i><!----></button><!--]--><!----> <!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!----><!----><!----> <h4 class="scroll-m-20 text-xl font-semibold tracking-tight hidden lg:block"><!----><!---->Sadat Hossain<!----></h4><!----></a></div> <div class="hidden flex-[2] flex-row items-center justify-center gap-2 sm:flex"><!--[--><a href="/skills"><!----><!--[!--><button aria-describedby="bDImqKZA4e" id="kktgMvw4Yv" data-state="closed" data-melt-tooltip-trigger="" data-tooltip-trigger="" type="button"><!----><!--[!--><!----><button  type="button" tabindex="0" class="ring-offset-background focus-visible:ring-ring whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex flex-row items-center justify-center gap-2" data-button-root=""><!----><!----><i class="flex-shrink-0 text-xl i-carbon-assembly-cluster"></i><!----> <div class="hidden lg:block">Skills</div><!----><!----><!----></button><!----><!--]--><!----></button><!--]--><!----> <!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!----><!----><!----></a><a href="/projects"><!----><!--[!--><button aria-describedby="aw654I6XnL" id="LUL28RDgBh" data-state="closed" data-melt-tooltip-trigger="" data-tooltip-trigger="" type="button"><!----><!--[!--><!----><button  type="button" tabindex="0" class="ring-offset-background focus-visible:ring-ring whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex flex-row items-center justify-center gap-2" data-button-root=""><!----><!----><i class="flex-shrink-0 text-xl i-carbon-cube"></i><!----> <div class="hidden lg:block">Projects</div><!----><!----><!----></button><!----><!--]--><!----></button><!--]--><!----> <!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!----><!----><!----></a><a href="/experience"><!----><!--[!--><button aria-describedby="DTrRABvEeR" id="6Xpd14LJsT" data-state="closed" data-melt-tooltip-trigger="" data-tooltip-trigger="" type="button"><!----><!--[!--><!----><button  type="button" tabindex="0" class="ring-offset-background focus-visible:ring-ring whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex flex-row items-center justify-center gap-2" data-button-root=""><!----><!----><i class="flex-shrink-0 text-xl i-carbon-development"></i><!----> <div class="hidden lg:block">Experience</div><!----><!----><!----></button><!----><!--]--><!----></button><!--]--><!----> <!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!----><!----><!----></a><a href="/education"><!----><!--[!--><button aria-describedby="RefFTSXESy" id="oW01ReTWPB" data-state="closed" data-melt-tooltip-trigger="" data-tooltip-trigger="" type="button"><!----><!--[!--><!----><button  type="button" tabindex="0" class="ring-offset-background focus-visible:ring-ring whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex flex-row items-center justify-center gap-2" data-button-root=""><!----><!----><i class="flex-shrink-0 text-xl i-carbon-education"></i><!----> <div class="hidden lg:block">Education</div><!----><!----><!----></button><!----><!--]--><!----></button><!--]--><!----> <!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!----><!----><!----></a><a href="/blogs"><!----><!--[!--><button aria-describedby="zGv9iE4N6f" id="jmTciEjl-m" data-state="closed" data-melt-tooltip-trigger="" data-tooltip-trigger="" type="button"><!----><!--[!--><!----><button  type="button" tabindex="0" class="ring-offset-background focus-visible:ring-ring whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex flex-row items-center justify-center gap-2" data-button-root=""><!----><!----><i class="flex-shrink-0 text-xl i-carbon-blog"></i><!----> <div class="hidden lg:block">Blogs</div><!----><!----><!----></button><!----><!--]--><!----></button><!--]--><!----> <!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!----><!----><!----></a><!--]--></div> <div class="hidden flex-row items-center justify-end gap-2 sm:flex sm:flex-1"><a href="/search"><!--[!--><!----><button  type="button" tabindex="0" class="ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 text-xl" data-button-root=""><!----><!----><i class="flex-shrink-0  i-carbon-search"></i><!----><!----><!----></button><!----><!--]--><!----></a> <!--[!--><!----><button  type="button" tabindex="0" class="ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 text-xl" data-button-root=""><!----><!----><i class="flex-shrink-0  i-carbon-sun"></i><!----><!----><!----></button><!----><!--]--><!----></div> <div class="flex flex-[2] flex-row items-center justify-center sm:hidden"><a href="/"><div class="text-lg font-semibold "><!----><!---->Sadat Hossain<!----></div><!----></a></div> <div class="flex flex-row items-center justify-center sm:hidden"><!----><!--[!--><button aria-haspopup="dialog" aria-expanded="false" type="button" data-melt-dialog-trigger="" data-dialog-trigger=""><!----><!--[!--><!----><button  type="button" tabindex="0" class="ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10" data-button-root=""><!----><!----><i class="flex-shrink-0 text-xl i-carbon-menu"></i><!----><!----><!----></button><!----><!--]--><!----></button><!--]--><!----> <!--[!--><div data-portal="" data-melt-dialog-portalled="" data-dialog-portal=""><!----><!----><!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!----> <!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!----><!----><!----></div><!--]--><!----><!----><!----></div></div><!----> <div class="mt-[50px] flex flex-1 flex-col svelte-zxq5ct"><!----><!----> <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col flex-1 pb-8"><!----><!----><h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-center py-16"><!----><!---->Experience<!----></h1><!----> <div class="flex flex-1 flex-col gap-5 px-4"><!----><input class="border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring flex h-10 w-full rounded-md border px-3 py-2 text-sm file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" value="" placeholder="Search..."><!----> <!--[!--><div class="flex flex-col gap-6 lg:gap-0"><!--[--><div class="flex flex-row gap-4"><div class="flex flex-1 flex-col justify-center lg:py-[50px]"><!----><a  href="/experience/buet-adjunct-lecturer" class="card rounded-lg border bg-card text-card-foreground shadow-sm svelte-1kl7305"><div class="card-color flex flex-1 flex-col svelte-1kl7305"><div class="p-6 flex flex-col gap-8 sm:flex-row"><!----><!--[!--><div class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full" data-avatar-root=""><!----><!----><!--[!--><span data-melt-avatar-fallback="" data-avatar-fallback="" class="bg-muted flex h-full w-full items-center justify-center rounded-full"><!----><!----><img src="/logos/no-img.svg" alt="Adjunct Lecturer"><!----><!----></span><!--]--><!----> <!--[!--><img src="/logos/buet.svg" style="display:none;" data-melt-avatar-image="" data-bits-avatar-image="" class="aspect-square h-full w-full" onload="this.__e=event" onerror="this.__e=event"><!--]--><!----><!----><!----></div><!--]--><!----> <div class="flex flex-col gap-4"><!----><h3  class="text-lg font-semibold leading-none tracking-tight"><!----><!---->Adjunct Lecturer<!----><!----></h3><!----><!----> <div class="flex flex-row flex-wrap gap-1"><!--[--><!----><!--[!--><button aria-describedby="m4l6NC2XEO" id="a-qDXoVddO" data-state="closed" data-melt-tooltip-trigger="" data-tooltip-trigger="" type="button"><!----><!----><span  class="focus:ring-ring select-none rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 border-transparent flex flex-row items-center gap-1"><!----><i class="flex-shrink-0  i-carbon-building"></i><!----> Bangladesh University of Engineering and Technology (BUET)<!----><!----></span><!----><!----> <!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!----><!----></button><!--]--><!----><!----><!--[!--><button aria-describedby="cXPTy2-igg" id="ifZQf-nKSA" data-state="closed" data-melt-tooltip-trigger="" data-tooltip-trigger="" type="button"><!----><!----><span  class="focus:ring-ring select-none rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 border-transparent flex flex-row items-center gap-1"><!----><i class="flex-shrink-0  i-carbon-location"></i><!----> Dhaka, Bangladesh<!----><!----></span><!----><!----> <!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!----><!----></button><!--]--><!----><!----><!--[!--><button aria-describedby="aRSNL9Xplk" id="7CCI_lGivj" data-state="closed" data-melt-tooltip-trigger="" data-tooltip-trigger="" type="button"><!----><!----><span  class="focus:ring-ring select-none rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 border-transparent flex flex-row items-center gap-1"><!----><i class="flex-shrink-0  i-carbon-hourglass"></i><!----> Part-time<!----><!----></span><!----><!----> <!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!----><!----></button><!--]--><!----><!--]--></div> <!----><!--[!--><button aria-describedby="rnJfzPDWcd" id="1IGLk7UQ9X" data-state="closed" data-melt-tooltip-trigger="" data-tooltip-trigger="" type="button"><!----><p class="text-sm text-muted-foreground flex flex-row items-center gap-2"><!----><i class="flex-shrink-0  i-carbon-calendar"></i><!----> <div>Apr 2025 - </div><!----></p><!----></button><!--]--><!----> <!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!----><!----><!----> <!----><!--[!--><button aria-describedby="f28s4MnwEv" id="BkhBjvvkAE" data-state="closed" data-melt-tooltip-trigger="" data-tooltip-trigger="" type="button"><!----><p class="text-sm text-muted-foreground flex flex-row items-center gap-2"><!----><i class="flex-shrink-0  i-carbon-time"></i><!----> <div>1 month 19 days</div><!----></p><!----> <!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--[!--><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--><!----><!----></button><!--]--><!----><!----> <div>Teaching undergraduate courses in Computer Science and Engineering at Bangladesh University of Engineering and Technology (BUET).</div> <!--[--><div class="flex flex-col gap-2"><p class="text-sm text-muted-foreground "><!----><!---->Courses Taught:<!----></p><!----> <div class="flex flex-row flex-wrap gap-2"><!--[--><!----><span  class="focus:ring-ring inline-flex select-none items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-foreground text-xs"><!----><!---->CSE102: Structured Programming Language Sessional<!----><!----></span><!----><!----><span  class="focus:ring-ring inline-flex select-none items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-foreground text-xs"><!----><!---->CSE208: Data Structure and Algorithm II Sessional<!----><!----></span><!----><!----><span  class="focus:ring-ring inline-flex select-none items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-foreground text-xs"><!----><!---->CSE314: Operating Systems Sessional<!----><!----></span><!----><!--]--> <!--[--><!----><span  class="focus:ring-ring inline-flex select-none items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 border-transparent text-xs"><!----><!---->+2 more<!----><!----></span><!----><!--]--></div></div><!--]--></div><!----></div><!----></div><!----></a><!----><!----></div> <div class="hidden h-[full] min-w-0 flex-shrink-0 flex-col items-center lg:flex" style="--color: hsl(var(--border) / var(--tw-border-opacity, 1)); --icon: hsl(var(--foreground) / var(--tw-border-opacity, 1))"><div class="w-[1px] flex-1 bg-[--color]"></div> <div class="my-2 text-[--icon]"><i class="flex-shrink-0  i-carbon-radio-button-checked"></i><!----></div> <div class="w-[1px] flex-1 bg-[--color]"></div></div> <div class="hidden min-w-0 flex-1 flex-shrink-0 flex-row lg:flex"></div></div><!--]--></div><!--]--><!----><!----></div><!----><!----></div><!----><!----><!----></div></div><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_12luxqs = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.CFoTqnFO.js"),
+						import("./_app/immutable/entry/app.DIbpfEFn.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 7],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+		
+		<script>
+			// Apply theme to loader immediately - placed at bottom to ensure body is available
+			(function() {
+				try {
+					const theme = localStorage.getItem('mode-watcher-mode');
+					const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+					
+					// Determine if we should use dark theme
+					const shouldUseDark = theme === 'dark' || (theme !== 'light' && systemDark);
+					
+					if (shouldUseDark) {
+						document.body.classList.add('dark-loader');
+					} else {
+						document.body.classList.add('light-loader');
+					}
+				} catch (e) {
+					// Fallback: just rely on CSS media queries
+					console.warn('Theme detection failed, falling back to CSS media queries');
+				}
+			})();
+		</script>
+	</body>
+</html>

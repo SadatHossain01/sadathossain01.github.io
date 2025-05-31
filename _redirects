@@ -1,1 +1,9 @@
-/*    /index.html   200
+# Handle dynamic routes that need client-side routing
+/blogs/*   /blogs.html   200
+/projects/*   /projects.html   200
+/experience/*   /experience.html   200
+/education/*   /education.html   200
+/skills/*   /skills.html   200
+
+# Fallback for any unmatched routes (404 handling)
+/*   /404.html   404
