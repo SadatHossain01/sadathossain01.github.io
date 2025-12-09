@@ -1,1 +1,0 @@
-import{i as r,F as i,o as f,B as c,y as p,j as d,q as l}from"./BWRrumWu.js";function S(n,o,...e){var t=n,s=c,a;r(()=>{s!==(s=o())&&(a&&(p(a),a=null),a=f(()=>s(t,...e)))},i),d&&(t=l)}const m="Sadat",u="Hossain",N="Mohammad Sadat Hossain",h="Sadat Hossain",_={firstName:m,lastName:u,suffix:h,get fullName(){return N}};export{_ as B,S as s};

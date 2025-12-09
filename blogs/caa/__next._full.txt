@@ -1,0 +1,153 @@
+1:"$Sreact.fragment"
+2:I[59919,["/_next/static/chunks/125c0793159e367e.js","/_next/static/chunks/dd85a58751de53fc.js"],"ThemeProvider"]
+3:I[45678,["/_next/static/chunks/125c0793159e367e.js","/_next/static/chunks/dd85a58751de53fc.js"],"default"]
+4:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/c81db6e24f0cfdeb.js"],"default"]
+5:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/c81db6e24f0cfdeb.js"],"default"]
+7:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/c81db6e24f0cfdeb.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+a:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/c81db6e24f0cfdeb.js"],"ViewportBoundary"]
+c:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/c81db6e24f0cfdeb.js"],"MetadataBoundary"]
+e:I[68027,[],"default"]
+:HL["/_next/static/chunks/876d5c3a7124f31f.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/6f04dbb31b3b2afc.css","style"]
+0:{"P":null,"b":"mtbgdWM9z9-wLGrZBRKzV","c":["","blogs","caa",""],"q":"","i":false,"f":[[["",{"children":["blogs",{"children":[["slug","caa","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/876d5c3a7124f31f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/125c0793159e367e.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/dd85a58751de53fc.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable font-sans antialiased min-h-screen flex flex-col","children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","$L3",null,{}],["$","main",null,{"className":"flex-1 container mx-auto px-4 py-8","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t border-slate-200 dark:border-slate-800 py-6 text-center text-sm text-slate-500 dark:text-slate-400","children":["© ",2025," Mohammad Sadat Hossain. All rights reserved."]}]]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L6",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/6f04dbb31b3b2afc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c7890717b80e2b2.js","async":true,"nonce":"$undefined"}]],["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$La",null,{"children":"$@b"}],["$","div",null,{"hidden":true,"children":["$","$Lc",null,{"children":["$","$8",null,{"name":"Next.Metadata","children":"$@d"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$e",[]],"S":true}
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/c81db6e24f0cfdeb.js"],"IconMark"]
+d:[["$","title","0",{"children":"Mohammad Sadat Hossain"}],["$","meta","1",{"name":"description","content":"Portfolio of Mohammad Sadat Hossain - CS Graduate, Researcher, and Lecturer."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","$Lf","3",{}]]
+9:null
+10:I[22016,["/_next/static/chunks/125c0793159e367e.js","/_next/static/chunks/dd85a58751de53fc.js","/_next/static/chunks/7c7890717b80e2b2.js"],""]
+6:["$","div",null,{"className":"max-w-3xl mx-auto space-y-8","children":[["$","$L10",null,{"href":"/blogs","className":"inline-flex items-center gap-2 text-sm text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-50 transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}],"Back to Blogs"]}],["$","header",null,{"className":"space-y-4 border-b border-slate-200 dark:border-slate-800 pb-8","children":[["$","div",null,{"className":"flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400","children":[["$","div",null,{"className":"flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-calendar","aria-hidden":"true","children":[["$","path","1cmpym",{"d":"M8 2v4"}],["$","path","4m81vk",{"d":"M16 2v4"}],["$","rect","1hopcy",{"width":"18","height":"18","x":"3","y":"4","rx":"2"}],["$","path","8toen8",{"d":"M3 10h18"}],"$undefined"]}],["$","span",null,{"children":"January 6, 2025"}]]}],["$","span",null,{"className":"px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-xs font-medium","children":"Paper Review"}]]}],["$","h1",null,{"className":"text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-50 leading-tight","children":"Advancing Adversarial Attacks in Tabular Machine Learning: A Deep Dive into CAA"}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","span","Machine Learning",{"className":"flex items-center gap-1 text-xs text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded-full","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":12,"height":12,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-tag","aria-hidden":"true","children":[["$","path","vktsd0",{"d":"M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"}],["$","circle","kqv944",{"cx":"7.5","cy":"7.5","r":".5","fill":"currentColor"}],"$undefined"]}],"Machine Learning"]}],["$","span","Adversarial Attacks",{"className":"flex items-center gap-1 text-xs text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded-full","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":12,"height":12,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-tag","aria-hidden":"true","children":[["$","path","vktsd0",{"d":"M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"}],["$","circle","kqv944",{"cx":"7.5","cy":"7.5","r":".5","fill":"currentColor"}],"$undefined"]}],"Adversarial Attacks"]}],["$","span","Tabular Data",{"className":"flex items-center gap-1 text-xs text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded-full","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":12,"height":12,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-tag","aria-hidden":"true","children":[["$","path","vktsd0",{"d":"M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"}],["$","circle","kqv944",{"cx":"7.5","cy":"7.5","r":".5","fill":"currentColor"}],"$undefined"]}],"Tabular Data"]}],["$","span","Security",{"className":"flex items-center gap-1 text-xs text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded-full","children":["$L11","Security"]}],"$L12","$L13"]}]]}],"$L14"]}]
+15:I[12740,["/_next/static/chunks/125c0793159e367e.js","/_next/static/chunks/dd85a58751de53fc.js","/_next/static/chunks/7c7890717b80e2b2.js"],"default"]
+11:["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":12,"height":12,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-tag","aria-hidden":"true","children":[["$","path","vktsd0",{"d":"M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"}],["$","circle","kqv944",{"cx":"7.5","cy":"7.5","r":".5","fill":"currentColor"}],"$undefined"]}]
+12:["$","span","NeurIPS",{"className":"flex items-center gap-1 text-xs text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded-full","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":12,"height":12,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-tag","aria-hidden":"true","children":[["$","path","vktsd0",{"d":"M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"}],["$","circle","kqv944",{"cx":"7.5","cy":"7.5","r":".5","fill":"currentColor"}],"$undefined"]}],"NeurIPS"]}]
+13:["$","span","Research",{"className":"flex items-center gap-1 text-xs text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded-full","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":12,"height":12,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-tag","aria-hidden":"true","children":[["$","path","vktsd0",{"d":"M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"}],["$","circle","kqv944",{"cx":"7.5","cy":"7.5","r":".5","fill":"currentColor"}],"$undefined"]}],"Research"]}]
+16:T124a,**Authors**: Mohammad Sadat Hossain, Nafis Tahmid, Shattik Islam Rhythm  
+**Date**: January 6, 2025
+
+---
+
+## Introduction
+
+In the rapidly evolving landscape of machine learning security, adversarial attacks have predominantly focused on computer vision and natural language processing. However, a significant portion of real-world machine learning applications actually process tabular data, especially in critical domains like finance, healthcare, and cybersecurity. The paper “Constrained Adaptive Attack: Effective Adversarial Attack Against Deep Neural Networks for Tabular Data” addresses this crucial gap by introducing novel approaches to generate adversarial examples for tabular data while respecting real-world constraints.
+
+---
+
+## The Challenge of Tabular Adversarial Attacks
+
+Unlike images or text, tabular data comes with inherent constraints that make traditional adversarial attack methods ineffective. For example:
+- In a financial dataset, features like “total debt” and “monthly payment” must maintain specific mathematical relationships.
+- Categorical features like “education level” cannot be arbitrarily modified to continuous values.
+
+### Key Limitations in Existing Approaches:
+- Most attacks ignore feature relationships.
+- Current methods fail to handle mixed data types or categorical features.
+- Available attacks like **CPGD** show low success rates.
+- Search-based methods like **MOEVA** are computationally expensive.
+
+---
+
+## Technical Innovation: CAPGD
+
+### Adaptive Step Size
+CAPGD adaptively adjusts the step size based on optimization progress:
+- Step size is halved when:
+  - The loss hasn’t increased in 75% of steps since the last checkpoint.
+  - The maximum loss hasn’t improved since the last checkpoint.
+
+Mathematically:
+```math
+\eta^{k+1} =
+\begin{cases}
+\eta^{k} & \text{if progress is good} \\
+\frac{\eta^{k}}{2} & \text{otherwise}
+\end{cases}
+```
+
+### Momentum Integration
+Incorporates momentum for improved stability:
+```math
+z^{k+1} = P_S\left( x^{k} + \eta^{k} \nabla L'x^{k} \right)
+```
+
+```math
+x^{k+1} = R_{\Omega}\left( P_S\left( x^{k} + \alpha \left( z^{k+1} - x^{k} \right) + (1-\alpha) \left( x^{k} - x^{k-1} \right) \right) \right)
+```
+
+where $\alpha = 0.75$ balances the current gradient and previous updates.
+
+### Repair Operator
+A novel repair operator $R_{\Omega}$ ensures constraint satisfaction by projecting examples back into the valid data space.
+
+---
+
+## Formulation of Constraints
+
+CAPGD and CAA respect domain-specific constraints, preserving adversarial example validity via structured grammar.
+
+### Types of Constraints:
+1. **Immutability**: Certain features cannot be modified (e.g., “loan ID”).
+2. **Boundaries**: Features must remain within specific ranges (e.g., $5000 \leq \text{Loan Amount} \leq 100000$).
+3. **Type**: Features retain their data type (e.g., categorical values remain categorical).
+4. **Feature Relationships**: Logical/mathematical relationships must be preserved (e.g., $\text{Total Debt} \geq \text{Monthly Payments}$).
+
+### Constraint Grammar
+```math
+\omega := \omega_1 \land \omega_2 \mid \omega_1 \lor \omega_2 \mid \psi_1 \geq \psi_2 \mid f \in \{\psi_1, \ldots, \psi_k\},
+```
+where:
+- $\omega$: Constraint
+- $\psi$: Numeric expression
+- $f$: Feature
+
+---
+
+## The Power of Ensemble: CAA
+
+CAA combines **CAPGD** with **MOEVA**, leveraging their strengths:
+1. CAPGD is fast but less effective.
+2. MOEVA is slower but highly effective.
+
+### Achievements:
+- Up to **96.1% decrease** in model accuracy.
+- **5x faster** than pure MOEVA.
+- Best performance in **19 out of 20 experimental settings**.
+
+---
+
+## Experimental Validation
+
+### Datasets:
+- URL (phishing detection)
+- LCLD (credit scoring)
+- CTU (botnet detection)
+- WiDS (medical)
+
+### Architectures:
+- TabTransformer
+- RLN
+- VIME
+- STG
+- TabNet
+
+### Key Findings:
+- CAPGD outperforms all other gradient-based attacks.
+- CAA balances effectiveness with reduced computational cost.
+- Adversarial training shows varying effectiveness across architectures.
+
+---
+
+## Future Directions
+
+1. Development of defenses against constrained adversarial attacks.
+2. Advanced approaches for handling complex feature relationships.
+3. Design of robust architectures for tabular data.
+4. Optimization of search-based components in CAA.
+
+---
+
+## Conclusion
+
+This work advances adversarial machine learning for tabular data by introducing **CAPGD** and **CAA**. These contributions not only enhance attack effectiveness but also establish new benchmarks for evaluating robustness in tabular ML models. The paper underscores the critical need to address vulnerabilities in sensitive domains like finance and healthcare.
+
+---14:["$","$L15",null,{"content":"$16"}]
