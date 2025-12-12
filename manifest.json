@@ -1,15 +1,20 @@
 {
   "name": "Mohammad Sadat Hossain - Portfolio",
-  "short_name": "Sadat Portfolio",
-  "description": "CS Graduate & AI Researcher - Portfolio Website",
+  "short_name": "Sadat Hossain",
+  "description": "Lecturer at CSE, BUET | AI & Bioinformatics Researcher | AI, ML Enthusiast",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "theme_color": "#003366",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en",
-  "categories": ["portfolio", "developer", "researcher"],
+  "categories": [
+    "portfolio",
+    "academic",
+    "researcher",
+    "lecturer"
+  ],
   "icons": [
     {
       "src": "/favicon.png",
@@ -18,7 +23,7 @@
       "purpose": "any maskable"
     },
     {
-      "src": "/favicon.png", 
+      "src": "/favicon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -26,9 +31,9 @@
   ],
   "screenshots": [
     {
-      "src": "/og-image.svg",
+      "src": "/og-image.png",
       "sizes": "1200x630",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "platform": "wide",
       "label": "Portfolio Homepage"
     }
